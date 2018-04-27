@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot - Hibernate</title>
+<style>
+table, th, td, tr {
+  border: 1px solid black;
+}
+td {
+  padding-right: 30px;
+}
+</style>
+</head>
+<body>
+ 
+  <h1>List Khoa Hoc:</h1>
+  <a th:href="@{/khoahoc-save}">Add Khoa Hoc</a>
+  <br />
+  <br />
+  <table>
+    <tr>
+      <th>Ma khoa hoc</th>
+      <th>Ten Khoa hoc</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <th:block th:each="khoahoc : ${listKhoaHoc}">
+      <tr>
+        <td><p th:text="${khoahoc.MaKH}"></p></td>
+        <td><p th:text="${khoahoc.TenKH}"></p></td>
+        <td><a th:href="@{/khoahoc-view/} + ${khoahoc.MaKH}">View</a></td>
+        <td><a th:href="@{/khoahoc-update/} + ${khoahoc.MaKH}">Edit</a></td>
+        <td><a th:href="@{/khoahocDelete/} + ${khoahoc.MaKH}">Delete</a></td>
+      </tr>
+    </th:block>
+  </table>
+</body>
+</html>

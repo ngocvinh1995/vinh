@@ -1,0 +1,5 @@
+package com.ifi.demo.repo;
+
+public interface SubjectRepository {
+
+}

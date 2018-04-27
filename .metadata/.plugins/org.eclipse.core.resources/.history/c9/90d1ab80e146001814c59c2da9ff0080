@@ -1,0 +1,30 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CarService } from './shared/car/car.service';
+import { HttpClientModule } from '@angular/common/http';
+
+
+import { AppComponent } from './app.component';
+import { WordConponent } from './word/word.component';
+import { BookComponent } from './book/book.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { CarListComponent } from './car-list/car-list.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    WordConponent,
+    BookComponent,
+    UserFormComponent,
+    CarListComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [CarService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

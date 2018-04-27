@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;my-app/src/app/word.component.html&apos; to &apos;word.component.ts&apos;" description="Rename resource &apos;word.component.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/app/word.component.html" name="word.component.ts" stamp="1524217590602" updateReferences="true"/>
+</session>

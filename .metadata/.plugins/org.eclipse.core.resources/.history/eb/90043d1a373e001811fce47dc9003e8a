@@ -1,0 +1,45 @@
+package com.example.demo.entity;
+
+import java.util.*;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity(name = "student")
+public class Sinhvien {
+
+	@Id
+	@GeneratedValue
+	private int MaSV;
+	private String Ten;
+	@ManyToMany(cascade = CascadeType.ALL)
+	private Set<KhoaHoc> khoaHoc = new HashSet<>(0);
+	
+	public int getMaSV() {
+		return MaSV;
+	}
+	public void setMaSV(int maSV) {
+		MaSV = maSV;
+	}
+	public String getTen() {
+		return Ten;
+	}
+	public void setTen(String ten) {
+		Ten = ten;
+	}
+	public Set<KhoaHoc> getKhoaHoc() {
+		return khoaHoc;
+	}
+	public void setKhoaHoc(Set<KhoaHoc> khoaHoc) {
+		this.khoaHoc = khoaHoc;
+	}
+	
+	@Override
+	public String toString() {
+		return "SinhVien{"+ "MaSV=" + MaSV + ", tenSinhVien=" + Ten + ", khoaHoc=" + khoaHoc + "}"; 
+	}
+	
+}

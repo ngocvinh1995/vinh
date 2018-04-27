@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot - Hibernate</title>
+</head>
+<body>
+  <a th:href="@{/student-list}">Danh sach sinh vien</a><br />
+  <h1>Edit Student:</h1>
+  <form th:action="@{/updateStudent}" method="POST" th:object="${student}">
+      Id: <input th:field="*{MaSV}" readonly="true" /> <br/> <br/>
+      Name: <input th:field="*{Ten}"/> <br/> <br/>
+      Nam Sinh: <input th:field="*{Namsinh}"/> <br/> <br/>
+       Gioi Tinh: <input th:field="*{Gioitinh}"/> <br/> <br/>
+        Que Quan: <input th:field="*{Quequan}"/> <br/> <br/>
+         Malop: <input th:field="*{Malop}"/> <br/> <br/>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>

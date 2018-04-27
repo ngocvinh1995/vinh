@@ -1,0 +1,80 @@
+package com.example.demo;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.*;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.demo.entity.KhoaHoc;
+import com.example.demo.entity.Sinhvien;
+import com.example.demo.util.HibernateUtil;
+
+@SpringBootApplication
+public class TestManyToManyApplication {
+
+	// thêm sinh viên
+	 
+    private static boolean themSinhVien(Sinhvien sinhVien) {
+        boolean check;
+        try {
+            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+            Transaction transaction = session.beginTransaction();
+            session.save(sinhVien);
+            transaction.commit();
+            check = true;
+        } catch (HibernateException h) {
+            check = false;
+        }
+        return check;
+    }
+ 
+//  cập nhật sinh viên
+ 
+    private static boolean capNhatSinhVien(Sinhvien sinhVien) {
+        boolean check;
+        try {
+            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+            Transaction transaction = session.beginTransaction();
+            session.update(sinhVien);
+            transaction.commit();
+            check = true;
+        } catch (HibernateException h) {
+            check = false;
+        }
+        return check;
+    }
+//    tim kiếm sinh viên theo tên
+ 
+    private static Sinhvien timSinhVien(String tenSinhVien) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        Transaction transaction = session.beginTransaction();
+        String hql = "from sinhvien where tenSinhVien= :tenSinhVien";
+        Query query = session.createQuery(hql);
+        query.setString("tenSinhVien", tenSinhVien);
+        Sinhvien sinhVien = (Sinhvien) query.uniqueResult();
+        transaction.commit();
+        return sinhVien;
+    }
+	public static void main(String[] args) {
+//      tạo dữa liệu test
+       Set<KhoaHoc> kh = new HashSet<KhoaHoc>();
+       kh.add(new KhoaHoc("Khóa Học A"));
+       kh.add(new KhoaHoc("Khóa Học B"));
+
+       Sinhvien sv = new Sinhvien();
+       sv.setTen("Nguyễn Văn A");
+       sv.setKhoaHoc(kh);
+//       nếu tên sinh viên tồn tại thì cập nhật, không thì thêm mới
+       if (timSinhVien(sv.getTen()) != null) {
+           capNhatSinhVien(sv);
+           System.out.println("cập nhật thành công!");
+       } else {
+
+           themSinhVien(sv);
+           System.out.println("thêm thành công!");
+       }
+		
+		SpringApplication.run(TestManyToManyApplication.class, args);
+	}
+}

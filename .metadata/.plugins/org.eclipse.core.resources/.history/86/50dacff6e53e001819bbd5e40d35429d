@@ -1,0 +1,5 @@
+package com.example.demo.model.framework;
+
+public class UserRepository {
+
+}

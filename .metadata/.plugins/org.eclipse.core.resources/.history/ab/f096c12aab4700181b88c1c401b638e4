@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-header>Student List</mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let student of students">
+        <img mat-list-avatar src="{{student.giphyUrl}}" alt="{{student.name}}">
+        <h3 mat-line>{{student.name}}</h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=/home/vinhnn/student-app/.git\:/home/vinhnn/my-app-QLSV/.git\:/home/vinhnn/my-app-student/.git\:
+GitRepositoriesView.GitDirectories.relative=/home/vinhnn/student-app/.git\:/home/vinhnn/my-app-QLSV/.git\:/home/vinhnn/my-app-student/.git\:
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

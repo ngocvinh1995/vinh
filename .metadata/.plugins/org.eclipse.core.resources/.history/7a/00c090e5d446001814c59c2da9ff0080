@@ -1,0 +1,6 @@
+<input placeholder=" Enter username" (keyup)="showEvent($event);" #txtUsername >
+<h3>Your name is : {{name}}</h3>
+<br>
+<input placeholder=" Enter username" [(ngModel)]="age" #txtUsernameS>
+<h3 [style.color] = "name.length % 2 == 0 ? 'red' : 'black'">Your name is : {{age}}</h3>
+

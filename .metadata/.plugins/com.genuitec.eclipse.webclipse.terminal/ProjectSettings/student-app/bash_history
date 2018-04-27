@@ -1,0 +1,6 @@
+ng generate module user --routing
+ng g m student --routing
+ng generate service student/student
+ng generate component /student/student-list
+ng generate component /student/student-create
+sudo npm install --save bootstrap font-awesome

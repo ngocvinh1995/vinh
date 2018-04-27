@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot - Hibernate</title>
+<style>
+table, th, td, tr {
+  border: 1px solid black;
+}
+td {
+  padding-right: 30px;
+}
+</style>
+</head>
+<body>
+  <h1>List:</h1>
+  <br />
+  <br />
+  <table>
+    <tr>
+      <th>id</th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>Salary</th>
+    </tr>
+    <th:block th:each="test : ${list}">
+      <tr>
+        <td><p th:text="${test.id}"></p></td>
+        <td><p th:text="${test.first_name}"></p></td>
+        <td><p th:text="${test.lastname}"></p></td>
+        <td><p th:text="${test.salary}"></p></td>
+
+      </tr>
+    </th:block>
+  </table>
+</body>
+</html>

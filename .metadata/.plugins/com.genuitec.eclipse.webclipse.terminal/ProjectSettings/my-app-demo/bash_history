@@ -1,0 +1,6 @@
+sudo npm install --save @angular/material @angular/cdk
+ng g s car
+mkdir -p src/app/shared/car
+mv src/app/car.service.* src/app/shared/car/.
+ng g s car
+ng g c Student-list

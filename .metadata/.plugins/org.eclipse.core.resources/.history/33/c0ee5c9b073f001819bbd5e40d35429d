@@ -1,0 +1,61 @@
+package com.example.demo;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+ 
+import javax.transaction.Transactional;
+ 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.demo.model.Student;
+import com.example.demo.model.Subject;
+import com.example.demo.repo.StudentRepository;
+import com.example.demo.repo.SubjectRepository;
+
+
+@SpringBootApplication
+public class SpringJpaManyToManyApplication implements CommandLineRunner{
+
+	@Autowired
+	StudentRepository studentRepository;
+	
+	@Autowired
+	SubjectRepository subjectRepository;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringJpaManyToManyApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		Student jack = new Student("Jack");
+		Student peter = new Student("Peter");
+		
+		Subject math = new Subject("Mathematics");
+		Subject computer = new Subject("Compter");
+		
+		
+		List<Student> studentLst = studentRepository.findAll();
+		List<Subject> subLst = subjectRepository.findAll();
+		
+		System.out.println(studentLst.size());
+		System.out.println(subLst.size());
+		
+		
+		System.out.println("===================Students info:==================");
+		studentLst.forEach(student->System.out.println(student.toString()));
+		
+		System.out.println("===================Students info:==================");
+		subLst.forEach(subject->System.out.println(subject.toString()));
+	}
+		
+}
+
+	
+		
+
+	

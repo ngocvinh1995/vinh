@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+import { StudentService } from '../shared/student/Student.service';
+
+@Component({
+  selector: 'app-student-list',
+  templateUrl: './student-list.component.html',
+  styleUrls: ['./student-list.component.css']
+})
+export class StudentListComponent implements OnInit {
+
+  cars: Array<any>;
+  constructor() { }
+
+  ngOnInit() {
+     this.StudenService.getAll().subscribe(data => {
+      this.cars = data;
+    });
+  }
+
+}

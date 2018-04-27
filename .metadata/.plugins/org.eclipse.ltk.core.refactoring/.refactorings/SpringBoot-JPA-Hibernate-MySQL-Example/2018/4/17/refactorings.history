@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BeanConfig.java&apos; to &apos;Springboot_Angular-myapp-demo/src/main/java/com.ifi.demo&apos;&#x0A;- Original project: &apos;SpringBoot-JPA-Hibernate-MySQL-Example&apos;&#x0A;- Destination element: &apos;Springboot_Angular-myapp-demo/src/main/java/com.ifi.demo&apos;&#x0A;- Original element: &apos;com.example.demo.BeanConfig.java&apos;" description="Copy compilation unit" destination="=Springboot_Angular-myapp-demo/src\/main\/java&lt;com.ifi.demo" element1="/src\/main\/java&lt;com.example.demo{BeanConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1524555356841" units="1" version="1.0"/>
+</session>

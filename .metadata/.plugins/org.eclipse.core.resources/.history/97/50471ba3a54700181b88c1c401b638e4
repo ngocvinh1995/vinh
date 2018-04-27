@@ -1,0 +1,7 @@
+<h2>Car List</h2>
+<div *ngFor="let student of student">
+  {{car.id}}
+  
+<div *ngFor="let student of student">
+  {{car.name}}
+</div>

@@ -1,0 +1,5 @@
+<h3 [hidden]="forgot" > {{en }} </h3>
+<p> {{vn}}</p>
+<img src = "{{imageUrl}}" alt="">
+<img [src]= "imageUrl" alt="">
+<button (click)="forgot = !forgot"> toggle forgot</button>

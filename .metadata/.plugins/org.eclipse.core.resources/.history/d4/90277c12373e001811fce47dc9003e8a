@@ -1,0 +1,36 @@
+package com.example.demo.entity;
+
+import javax.persistence.*;
+
+@Entity(name = "khoahoc")
+public class KhoaHoc {
+ 
+    @Id
+    @GeneratedValue
+    private int MaKH;
+    private String TenKH;
+ 
+    public KhoaHoc(String TenKH) {
+        this.TenKH = TenKH;
+    }
+ 
+    public int getMaKH() {
+		return MaKH;
+	}
+
+	public void setMaKH(int maKH) {
+		MaKH = maKH;
+	}
+
+	public String getTenKH() {
+		return TenKH;
+	}
+
+	public void setTenKH(String tenKH) {
+		TenKH = tenKH;
+	}
+
+	@Override
+    public String toString() {
+        return "KhoaHoc{" + "idKhoaHoc=" + MaKH + ", tenKhoaHoc=" + TenKH + '}';
+    }

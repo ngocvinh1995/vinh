@@ -1,0 +1,10 @@
+package com.ifi.demo.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Subject")
+public class Subject {
+
+}

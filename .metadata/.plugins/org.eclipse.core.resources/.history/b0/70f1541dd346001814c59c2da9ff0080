@@ -1,0 +1,6 @@
+<input placeholder=" Enter username" (keyup)="showEvent($event);">
+<h3>Your name is : {{name}}</h3>
+<br>
+<input placeholder=" Enter username" [(ngModel)]="age" #txtUsername>
+<h3>Your name is : {{age}}</h3>
+<code>{{txtUsername.values !=json}}</code>

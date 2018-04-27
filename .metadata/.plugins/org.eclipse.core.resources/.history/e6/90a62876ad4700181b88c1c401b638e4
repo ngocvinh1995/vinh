@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-header>Student List</mat-card-header>
+  <mat-card-content>
+    <mat-list>
+       <table  border = "2">
+            <thead>
+                <tr>
+                    <th>
+                       id 
+                    </th>
+                    <th>
+                      name 
+                    </th>
+                     <th>
+                      View
+                    </th>
+                     <th>
+                      Edit
+                    </th>
+                     <th>
+                      Delete 
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                	<td mat-line>
+                	    {{student.id}}
+                	</td>
+                     <td >
+                        {{student.name}}
+                    </td>
+                    <td><a>View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

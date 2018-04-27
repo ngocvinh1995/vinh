@@ -1,0 +1,42 @@
+package com.example.demo;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+ 
+import javax.transaction.Transactional;
+ 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.demo.model.Student;
+import com.example.demo.model.Subject;
+import com.example.demo.repo.StudentRepository;
+import com.example.demo.repo.SubjectRepository;
+
+
+@SpringBootApplication
+public class SpringJpaManyToManyApplication implements CommandLineRunner{
+
+	@Autowired
+	StudentRepository studentRepository;
+	
+	@Autowired
+	SubjectRepository subjectRepository;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringJpaManyToManyApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+		
+}
+	

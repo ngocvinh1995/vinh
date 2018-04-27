@@ -1,0 +1,41 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CarService } from './shared/car/car.service';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GiphyService } from './shared/giphy/giphy.service';
+
+import { AppComponent } from './app.component';
+import { WordConponent } from './word/word.component';
+import { BookComponent } from './book/book.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { CarListComponent } from './car-list/car-list.component';
+import { CarEditComponent } from './car-edit/car-edit.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    WordConponent,
+    BookComponent,
+    UserFormComponent,
+    CarListComponent,
+    CarEditComponent
+    
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule
+  ],
+  providers: [CarService, GiphyService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

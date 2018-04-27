@@ -1,0 +1,8 @@
+import {Component} from '@angular/core';
+
+@Component({
+   template: '<h3> this is word conponent</h3>',
+   selector: 'app-word'
+})
+
+export class WordConponent{}

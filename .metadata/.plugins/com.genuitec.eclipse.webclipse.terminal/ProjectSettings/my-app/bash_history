@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Eclipse
+Type=Application
+Exec=/opt/eclipse/eclipse
+Terminal=false
+Icon=/opt/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+yarn add bootstrap jquery
+sudo yarn add bootstrap jquery
+install bootstrap jquery --save
+npm install bootstrap jquery --save
+sudo npm install bootstrap jquery --save

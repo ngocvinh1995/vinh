@@ -1,0 +1,20 @@
+sudo nmp install bootstrap jquery --save
+sudo npm install boostrap jquery --save
+ng-sever --oppen
+ng serve --open
+sudo ng serve --open
+ng- serve
+ERROR in multi ./src/styles.css ./src/node_modules/bootstrap/dist/css/bootstrap.min.css
+sudo npm install bootstrap jquery --save
+ng g c book
+ng g c user-form
+ng g s car
+mkdir -p src/app/shared/car
+mv src/app/car.service.* src/app/shared/car/.
+ng g s car
+mv src/app/car.service.* src/app/shared/car/.
+ng g s car
+mv src/app/car.service.* src/app/shared/car/.
+ng g c car-list
+sudo npm install --save @angular/material @angular/cdk
+ng g c car-edit

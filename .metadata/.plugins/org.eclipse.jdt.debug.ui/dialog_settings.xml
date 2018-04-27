@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=demo/src\/main\/java&amp;lt;com.example.demo{DemoApplication.java[DemoApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=demo-1/src\/main\/java&amp;lt;com.example.demo{Demo1Application.java[Demo1Application&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootSecurityJPA/src\/main\/java&amp;lt;utils{EncrytedPasswordUtils.java[EncrytedPasswordUtils&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootJDBC/src\/main\/java&amp;lt;com.example.demo{SpringBootJdbcApplication.java[SpringBootJdbcApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootJDBC_demo/src\/main\/java&amp;lt;com.example.demo{SpringBootJdbcDemoApplication.java[SpringBootJdbcDemoApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootSecurityJPA/src\/main\/java&amp;lt;com.example.demo{SpringBootSecurityJpaApplication.java[SpringBootSecurityJpaApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootHibernate/src\/main\/java&amp;lt;com.example.demo{SpringBootHibernateApplication.java[SpringBootHibernateApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBoot-JPA-MySQL-Example/src\/main\/java&amp;lt;com.example.demo{SpringBootJpaMySqlExampleApplication.java[SpringBootJpaMySqlExampleApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBoot-Example/src\/main\/java&amp;lt;com.example.demo{SpringBootExampleApplication.java[SpringBootExampleApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBoot-JPA-Hibernate-MySQL-Example/src\/main\/java&amp;lt;com.example.demo{SpringBootJpaHibernateMySqlExampleApplication.java[SpringBootJpaHibernateMySqlExampleApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hibernate-MySQL-Example/src\/main\/java&amp;lt;com.example.demo{HibernateMySqlExampleApplication.java[HibernateMySqlExampleApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringJPA/src\/main\/java&amp;lt;com.example.demo{SpringJpaApplication.java[SpringJpaApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=SpringBootJDBC/\/home\/vinhnn\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/2.0.2.BUILD-SNAPSHOT\/spring-boot-2.0.2.BUILD-SNAPSHOT.jar&amp;lt;org.springframework.boot(SpringApplication.class[SpringApplication&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="627" key="DIALOG_X_ORIGIN"/>
+			<item value="209" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

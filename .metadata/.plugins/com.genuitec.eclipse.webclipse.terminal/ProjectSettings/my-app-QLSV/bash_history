@@ -1,0 +1,3 @@
+ng generate module student --routing
+ng generate component /student/student-list
+ng generate component /student/student-create

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Error -->
+	<definition name="403" template="/403.jsp"></definition>
+
+	<!-- Client -->
+	<definition name="common" template="/template/main.jsp">
+	</definition>
+	
+	<definition name="students" extends="common">
+		<put-attribute name="title" value="Student manager" />
+		<put-attribute name="content" value="/views/students.jsp" />
+	</definition>
+	
+	<definition name="student" extends="common">
+		<put-attribute name="title" value="View/Edit student" />
+		<put-attribute name="content" value="/views/edit_student.jsp" />
+	</definition>
+	
+	<definition name="courses" extends="common">
+		<put-attribute name="title" value="Course manager" />
+		<put-attribute name="content" value="/views/courses.jsp" />
+	</definition>
+	
+	<definition name="course" extends="common">
+		<put-attribute name="title" value="View/Edit course" />
+		<put-attribute name="content" value="/views/edit_course.jsp" />
+	</definition>
+	
+	<definition name="teachers" extends="common">
+		<put-attribute name="title" value="Teacher manager" />
+		<put-attribute name="content" value="/views/head_teachers.jsp" />
+	</definition>
+	
+	<definition name="teacher" extends="common">
+		<put-attribute name="title" value="View/Edit teacher" />
+		<put-attribute name="content" value="/views/edit_teacher.jsp" />
+	</definition>
+	
+	<definition name="cards" extends="common">
+		<put-attribute name="title" value="Cards manager" />
+		<put-attribute name="content" value="/views/cards.jsp" />
+	</definition>
+	
+	<definition name="card" extends="common">
+		<put-attribute name="title" value="View/Edit card" />
+		<put-attribute name="content" value="/views/edit_card.jsp" />
+	</definition>
+
+</tiles-definitions>

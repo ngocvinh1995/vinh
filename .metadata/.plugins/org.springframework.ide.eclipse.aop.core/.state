@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBoot-Example"/>
+<aop-project name="demo-1"/>
+<aop-project name="demo-2"/>
+<aop-project name="Springboot_Angular-my-app-student"/>
+<aop-project name="SpringBootHibernate"/>
+<aop-project name="Hibernate-MySQL-Example"/>
+<aop-project name="SpringBoot-JPA-Hibernate-MySQL-Example"/>
+<aop-project name="Springboot_Angular"/>
+</aop-reference-model>

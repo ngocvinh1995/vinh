@@ -1,0 +1,3 @@
+<nav> <a routerLink="/student" routerLinkActive="active">Students</a> <a routerLink="/student/create" routerLinkActive="active">New Students</a> </nav>
+
+<router-outlet></router-outlet>
